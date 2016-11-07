@@ -4,10 +4,12 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { Ng2CorpSidebarComponent } from '../modules/ng2-corp-sidebar/ng2-corp-sidebar.component'
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    Ng2CorpSidebarComponent
   ],
   imports: [
     BrowserModule,
@@ -15,6 +17,7 @@ import { AppComponent } from './app.component';
     HttpModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  exports: [Ng2CorpSidebarComponent]
 })
 export class AppModule { }
