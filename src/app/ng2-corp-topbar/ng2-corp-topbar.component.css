@@ -1,0 +1,153 @@
+
+aside {
+    display: block;
+}
+
+#topbar {    
+    background-color: rgba(254,254,254,0.9);
+    height: 43px;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: #888;   
+}
+
+#topbar a {
+    cursor: pointer
+}
+
+#topbar div.top-menu {
+    height: 43px;
+    background-color: rgba(254,254,254,0);
+    position: absolute;
+    width:100px;
+    right: 0;     
+}
+
+#topbar div.top-menu .menu-body {
+    position: relative;
+    top: -9px;
+    height: 43px;
+}
+#topbar div.top-menu .menu-body ul.menu-items {
+    list-style-type: none;
+    padding: 0;    
+}
+#topbar div.top-menu .menu-body ul.menu-items li {
+    position: absolute;   
+    right: 0;    
+}
+#topbar div.top-menu .menu-body ul.menu-items li a {    
+    color: #888;
+    border-radius: 0;
+    padding: 0;    
+}
+#topbar div.top-menu .menu-body ul.menu-items li a i {    
+    padding: 4px 0 0 10px;
+    height: 43px;
+    width: 53px;
+    font-size: 32px;
+}
+#topbar div.top-menu .menu-body ul.menu-items li a:hover {
+    color: #ccc
+}
+#topbar div.top-menu .menu-body ul.menu-items li a:hover ul.menu-subitems li {
+    background-color: rgba(238,238,238,0.9);    
+}
+#topbar div.top-menu .menu-body ul.menu-items li a:active,
+#topbar div.top-menu .menu-body ul.menu-items li a:focus,
+#topbar div.top-menu .menu-body ul.menu-items li a:hover {
+    color: #484848;
+}
+#topbar div.top-menu .menu-body ul.menu-items li ul.menu-subitems {
+    display: none;
+    list-style: none;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: rgba(250,250,250,0.3);
+    padding-right: 0;
+    width: 190px;
+    min-height: 40px;
+    margin-top: 2px;
+}
+#topbar div.top-menu .menu-body ul.menu-items li ul.menu-subitems li {
+    min-height: 24px;
+    color: #888;
+    position: relative;
+    left: -30px;
+}
+#topbar div.top-menu .menu-body ul.menu-items li ul.menu-subitems li a {
+    color: #f8f8f8;
+    display: block;
+    padding: 12px;
+    width: 190px;
+    font-size: 14px;
+    margin-left: -10px;
+}
+#topbar div.top-menu .menu-body ul.menu-items li ul.menu-subitems li a:active,
+#topbar div.top-menu .menu-body ul.menu-items li ul.menu-subitems li a:focus,
+#topbar div.top-menu .menu-body ul.menu-items li ul.menu-subitems li a:hover {    
+    background-color: rgba(238,238,238,0.3);
+    text-decoration: none;
+    
+}
+
+#topbar div.top-menu .menu-body ul.menu-items li:hover ul.menu-subitems {
+    display: block;
+}
+
+#topbar div.top-home {
+    background-color: rgba(200,200,200,0.5);
+    position: absolute;
+    width: 45px;
+    height: 43px;
+    top:0;
+    left:0;
+    padding: 8px 0 0 12px;
+}
+
+#topbar div.top-home a{
+    color:#888;    
+}
+
+#topbar div.top-home a i {
+    font-size: 22px;
+}
+
+#topbar div.top-title {
+    position: absolute;
+    top:0px;
+    left:46px;
+    height: 43px;
+    padding: 8px 20px 0 16px;
+    font-size: 18px;   
+    border-right: 1px solid #aaa; 
+}
+
+#topbar div.top-searchbox {    
+    position: absolute;
+    top: 0;
+    left: 220px;   
+    height: 43px;
+    width: 400px;
+    background:none;    
+}
+
+#topbar div.top-searchbox i{
+    margin: 12px 0 0 5px;
+    color: #888;
+    font-size:20px;
+}
+
+#topbar div.top-searchbox input[type="text"]{
+    position: relative;
+    top: -5px;
+    width:350px;
+    height:24px;    
+    border: none;
+    font-size: 12px;   
+    background-color: rgba(255,255,255,0); 
+}

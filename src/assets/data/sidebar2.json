@@ -1,0 +1,32 @@
+[
+  {
+    "menuItems": [      
+      {
+        "title": "User",
+        "externalLink": "",
+        "iconName": "account_circle",
+        "children": [
+          {
+            "title": "Profile",
+            "routerLink": [ "/dashboard", "1" ],
+            "externalLink": ""
+          },
+          {
+            "title": "Settings 1",
+            "routerLink": [],
+            "externalLink": "javascript:document.getElementById('body').style.backgroundImage = 'http://localhost:4200/assets/images/san-francisco-background.jpg';"
+          },
+          {
+            "title": "Settings 2",
+            "routerLink": [],
+            "externalLink": "javascript:alert(document.getElementById('body'));alert(document.getElementById('body').style.backgroundImage);document.getElementById('body').style.backgroundImage = 'http://localhost:4200/assets/images/chicago-background.jpg';"
+          },
+          {
+            "title": "Quit",
+            "externalLink": "logout"
+          }
+        ]
+      }
+    ]
+  }
+]
