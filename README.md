@@ -1,5 +1,10 @@
 # Ng2CorpUi
 
+## What is NG2 Corp UI Project ?
+NG2 Corp UI is an angular 2 module which embed several UI components.
+These component are used in others ASG Angular application like 'Workspace' for exemple.
+
+
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.17.
 
 ## Development server
