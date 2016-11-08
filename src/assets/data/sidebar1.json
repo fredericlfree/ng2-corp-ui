@@ -8,13 +8,11 @@
         "children": [
           {
             "title": "Webtop n°1",
-            "routerLink": ["/dashboard", "1"],
-            "externalLink": ""
+            "routerLink": ["/dashboard", "1"]            
           },
           {
             "title": "Webtop n°2",
-            "routerLink": ["/dashboard", "2"],
-            "externalLink": ""
+            "routerLink": ["/dashboard", "2"]
           }
         ]
       },

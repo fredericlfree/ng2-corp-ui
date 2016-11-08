@@ -20,7 +20,8 @@
                     </a>
                     <ul *ngIf="menuItem.children" class="menu-subitems">
                         <li *ngFor="let submenu of menuItem.children;let j = index">
-                            <a href="{{submenu.externalLink}}" [routerLink]="submenu.routerLink" routerLinkActive="active">{{submenu.title}}</a>
+                            <a *ngIf="submenu.externalLink" href="{{submenu.externalLink}}">{{submenu.title}}</a>
+                            <a *ngIf="submenu.routerLink" [routerLink]="submenu.routerLink" routerLinkActive="active">{{submenu.title}}</a>
                         </li>
                     </ul>
                 </li>

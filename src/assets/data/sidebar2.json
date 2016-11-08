@@ -8,18 +8,19 @@
         "children": [
           {
             "title": "Profile",
-            "routerLink": [ "/dashboard", "1" ],
-            "externalLink": ""
+            "routerLink": [ "/dashboard", "1" ]
           },
           {
-            "title": "Settings 1",
-            "routerLink": [],
-            "externalLink": "javascript:document.getElementById('body').style.backgroundImage = 'http://localhost:4200/assets/images/san-francisco-background.jpg';"
+            "title": "Theme 1",
+            "routerLink": [ "/desktop", "background1.jpg" ]
           },
           {
-            "title": "Settings 2",
-            "routerLink": [],
-            "externalLink": "javascript:alert(document.getElementById('body'));alert(document.getElementById('body').style.backgroundImage);document.getElementById('body').style.backgroundImage = 'http://localhost:4200/assets/images/chicago-background.jpg';"
+            "title": "Theme 2",
+            "routerLink": [ "/desktop", "background2.jpg" ]
+          },
+          {
+            "title": "Theme 3",
+            "routerLink": [ "/desktop", "background3.jpg" ]
           },
           {
             "title": "Quit",

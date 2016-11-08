@@ -1,10 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule  } from '@angular/router';
-import { Ng2CorpSidebarComponent } from './ng2-corp-sidebar/ng2-corp-sidebar.component';
+import { AppComponent } from './app.component';
+import { Ng2CorpDesktopComponent } from './ng2-corp-desktop/ng2-corp-desktop.component';
 
 
 const routes: Routes = [
-    { path: '', component: Ng2CorpSidebarComponent }
+    { path: '', component: AppComponent },
+    { path: 'desktop/:bgimage', component: Ng2CorpDesktopComponent }
 ];
 
 @NgModule({

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Ng2CorpSidebarComponent } from './ng2-corp-sidebar/ng2-corp-sidebar.component'
+import { Ng2CorpDesktopComponent } from './ng2-corp-desktop/ng2-corp-desktop.component'
 
 @Component({
   selector: 'app-root',
