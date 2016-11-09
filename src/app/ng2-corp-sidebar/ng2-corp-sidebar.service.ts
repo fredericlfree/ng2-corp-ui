@@ -20,20 +20,20 @@ import 'rxjs/add/operator/toPromise';
 @Injectable()
 export class Ng2CorpSidebarService {
 
-  private sidebarUrl: string;
+  // private sidebarUrl: string;
   private headers: Headers;
 
   constructor(private http: Http) {
         this.headers = new Headers();
         this.headers.append('Content-Type', 'application/json');
         this.headers.append('Accept', 'application/json');
-        this.sidebarUrl = ' http://localhost:4200/assets/data/';
+        // this.sidebarUrl = ' http://localhost:4200/assets/data/';
   }
 
-  getSidebarMenu(id: number): Observable<Ng2CorpSidebarMenu> {
-        console.log('getting sidebar: ' + id);
+  getSidebarMenu(jsonFileUrl: string): Observable<Ng2CorpSidebarMenu> {
+        console.log('getting sidebar: ' + jsonFileUrl);
 
-        return this.http.get(this.sidebarUrl + 'sidebar' + id + '.json')
+        return this.http.get(jsonFileUrl)
             .map((response: Response) => response.json() as Ng2CorpSidebarMenu);
         //    .do(data => console.log('All: ' + JSON.stringify(data)));
     }

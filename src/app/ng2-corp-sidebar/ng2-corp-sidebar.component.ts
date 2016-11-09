@@ -13,6 +13,7 @@ import { Ng2CorpSidebarMenu } from './ng2-corp-sidebar-menu';
 export class Ng2CorpSidebarComponent implements OnInit {
 
   @Input() top: number;
+  @Input() jsonFileUrl: string;
   errorMessage: string;
   model: Ng2CorpSidebarMenu;
   // structure: string;    
@@ -31,14 +32,13 @@ export class Ng2CorpSidebarComponent implements OnInit {
   }
 
   loadSidebar() {
-        this.sub = this.route.params.subscribe(params => {
-            let id = 1;
-            this.getSidebarMenu(Number(id));
+        this.sub = this.route.params.subscribe(params => {            
+            this.getSidebarMenu();
         });
   }
         
-  getSidebarMenu(id: number) {
-        this.sidebarService.getSidebarMenu(id)
+  getSidebarMenu() {
+        this.sidebarService.getSidebarMenu(this.jsonFileUrl)
             .subscribe(
             model => {
                 this.model = model[0];

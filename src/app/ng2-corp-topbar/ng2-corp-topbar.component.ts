@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 
 import { Ng2CorpSidebarService } from '../ng2-corp-sidebar/ng2-corp-sidebar.service';
@@ -11,6 +11,8 @@ import { Ng2CorpSidebarMenu } from '../ng2-corp-sidebar/ng2-corp-sidebar-menu';
   styleUrls: ['./ng2-corp-topbar.component.css']
 })
 export class Ng2CorpTopbarComponent implements OnInit {
+
+  @Input() jsonFileUrl: string;
 
   errorMessage: string;
   model: Ng2CorpSidebarMenu;
@@ -33,12 +35,12 @@ export class Ng2CorpTopbarComponent implements OnInit {
     loadSidebar() {
         this.sub = this.route.params.subscribe(params => {
             let id = 2;
-            this.getSidebarMenu(Number(id));
+            this.getSidebarMenu();
         });
     }
 
-    getSidebarMenu(id: number) {
-        this.sidebarService.getSidebarMenu(id)
+    getSidebarMenu() {
+        this.sidebarService.getSidebarMenu(this.jsonFileUrl)
             .subscribe(
             model => {
                 this.model = model[0];

@@ -12,15 +12,15 @@
           },
           {
             "title": "Theme 1",
-            "routerLink": [ "/desktop", "background1.jpg" ]
+            "routerLink": [ "/desktop", "http://localhost:4200/assets/images/background1.jpg" ]
           },
           {
             "title": "Theme 2",
-            "routerLink": [ "/desktop", "background2.jpg" ]
+            "routerLink": [ "/desktop", "http://localhost:4200/assets/images/background2.jpg" ]
           },
           {
             "title": "Theme 3",
-            "routerLink": [ "/desktop", "background3.jpg" ]
+            "routerLink": [ "/desktop", "http://localhost:4200/assets/images/background3.jpg" ]
           },
           {
             "title": "Quit",

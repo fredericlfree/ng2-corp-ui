@@ -6,7 +6,7 @@ import { Ng2CorpDesktopComponent } from './ng2-corp-desktop/ng2-corp-desktop.com
 
 const routes: Routes = [
     { path: '', component: AppComponent },
-    { path: 'desktop/:bgimage', component: Ng2CorpDesktopComponent }
+    { path: 'desktop/:backgroundImageUrl', component: Ng2CorpDesktopComponent }
 ];
 
 @NgModule({

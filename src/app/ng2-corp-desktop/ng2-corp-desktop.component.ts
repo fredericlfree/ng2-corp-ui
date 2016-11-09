@@ -6,42 +6,33 @@ import { Ng2CorpDesktopService } from './ng2-corp-desktop.service';
 @Component({
   selector: 'ng2-corp-desktop',
   templateUrl: './ng2-corp-desktop.component.html',
-  providers: [Ng2CorpDesktopService],
   styleUrls: ['./ng2-corp-desktop.component.css']  
 })
 export class Ng2CorpDesktopComponent implements OnInit {
   
-  @Input() backgroundImageName: string;
-  backgroundImageUrl : string;
-      
+  @Input() backgroundImageUrl: string;
+        
   sub: any;
 
   constructor( 
-    private desktopService: Ng2CorpDesktopService,
     private router: Router,
     private route: ActivatedRoute ) {    
   }
 
   ngOnInit() {
-        if (!this.backgroundImageName) {
-          this.backgroundImageName = 'background1.jpg';
-        }
-        this.loadDesktop();        
+        if (!this.backgroundImageUrl) {
+          this.loadDesktopBackground();
+        }        
   }
 
-  loadDesktop() {
+  loadDesktopBackground() {
         this.sub = this.route.params.subscribe(params => {
-            if(params['bgimage'])
+            if(params['backgroundImageUrl'])
             {
-              let imgName = params['bgimage'];
-              this.backgroundImageName = imgName;
+              let imgUrl = params['backgroundImageUrl'];
+              this.backgroundImageUrl = imgUrl;
             }
-            this.getDesktopBackground(String(this.backgroundImageName));
         });
-  }
-        
-  getDesktopBackground(fileName: string) {
-        this.backgroundImageUrl = this.desktopService.getDesktopBackground(fileName);            
   }
 
 }
