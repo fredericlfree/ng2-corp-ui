@@ -29,9 +29,9 @@ npm install ng2-corp-ui
 Add `Ng2CorpDesktop`, `Ng2CorpSidebar` and/or `Ng2CorpTopbar` to your app module:
 
 ```typescript
-import { Ng2CorpDesktopComponent } from './ng2-corp-desktop/ng2-corp-desktop.component';
-import { Ng2CorpSidebarComponent } from './ng2-corp-sidebar/ng2-corp-sidebar.component';
-import { Ng2CorpTopbarComponent } from './ng2-corp-topbar/ng2-corp-topbar.component';
+import { Ng2CorpDesktopModule } from 'ng2-corp-ui/src/app';
+import { Ng2CorpSidebarModule } from 'ng2-corp-ui/src/app';
+import { Ng2CorpTopbarModule } from 'ng2-corp-ui/src/app';
 
 
 @NgModule({
